@@ -93,7 +93,7 @@ class TagColumn(Column):
                 tag = tag[0:self.width-2] + ".."
 
         tag = tag.rjust(self.width)
-        return color + Style.DIM + tag + Style.RESET_ALL
+        return color + tag + Style.RESET_ALL
 
 TagColumn.init_color_map()
 
